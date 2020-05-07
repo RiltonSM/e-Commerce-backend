@@ -1,16 +1,13 @@
 // Update with your config settings.
+require('dotenv').config();
 
 module.exports = {
-
   development: {
-    client: 'sqlite3',
-    connection: {
-      filename: './src/database/dev.sqlite3'
-    },
+    client: 'pg',
+    connection: "postgres://ymhynzji:uTTXuhp1tgRmRxVYkEWXo4S9sOWB9Zxu@drona.db.elephantsql.com:5432/ymhynzji",
     migrations: {
-      directory: './src/database/migrations'
-    },
-    useNullAsDefault: true,
+      directory: './src/database/migrations',
+    }
   },
 
   staging: {

@@ -4,7 +4,14 @@ require('dotenv').config();
 module.exports = {
   development: {
     client: 'pg',
-    connection: "postgres://ymhynzji:uTTXuhp1tgRmRxVYkEWXo4S9sOWB9Zxu@drona.db.elephantsql.com:5432/ymhynzji",
+    connection: {
+      user: "hszlqayvocxyjf",
+      password: "48942c22388a2179ff8d3da5b4e80d3eb8a0338b3643b74afc4d4134550ac007",
+      database: "de0un2mur5f1r8",
+      port: 5432,
+      host: "ec2-52-71-55-81.compute-1.amazonaws.com",
+      ssl: {rejectUnauthorized: false}
+    },//"postgres://hszlqayvocxyjf:48942c22388a2179ff8d3da5b4e80d3eb8a0338b3643b74afc4d4134550ac007@ec2-52-71-55-81.compute-1.amazonaws.com:5432/de0un2mur5f1r8",
     migrations: {
       directory: './src/database/migrations',
     }

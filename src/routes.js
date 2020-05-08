@@ -7,6 +7,9 @@ const PagSeguroController = require('./controllers/PagSeguroController');
 const UsersController = require('./controllers/UsersController');
 const SalesController = require('./controllers/SalesController');
 
+routes.get('/', function(req, res){
+    res.redirect('/produtos');
+})
 routes.get('/produtos', ProdutosController.index);
 routes.get('/item/:id', ProdutosController.item);
 routes.post('/novoproduto', ProdutosController.create);

@@ -3,7 +3,7 @@ const qs = require('qs');
 
 const api = require('../utils/pagseguro');
 const apiV3 = require('../utils/pagseguroV3');
-const token = require('../utils/token');
+const token = process.env.TOKEN;
 
 module.exports = {
     async getId(request, response){

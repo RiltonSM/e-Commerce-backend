@@ -15,6 +15,7 @@ routes.get('/item/:id', ProdutosController.item);
 routes.post('/novoproduto', ProdutosController.create);
 routes.put('/updateproduto', ProdutosController.update);
 routes.delete('/remove/:id', ProdutosController.delete);
+routes.get('/category/:id', ProdutosController.category);
 routes.get('/getId', PagSeguroController.getId);
 routes.post('/finish', PagSeguroController.buy);
 routes.post('/newuser', UsersController.create);

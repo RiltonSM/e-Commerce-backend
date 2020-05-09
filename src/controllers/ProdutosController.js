@@ -47,5 +47,11 @@ module.exports = {
         await connection('produtos').where('id', id).delete();
 
         response.send('delete');
+    },
+
+    async category(request, response){
+        const { id } = request.params;
+        const products = await connection('produtos').where('categoria', id).select('*');
+        return response.json(products);
     }
 }

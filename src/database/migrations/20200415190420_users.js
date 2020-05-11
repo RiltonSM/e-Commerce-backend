@@ -14,7 +14,7 @@ exports.up = function(knex) {
     table.string('city').notNullable();
     table.string('state').notNullable();
     table.integer('ddd').notNullable();
-    table.integer('phone').notNullable();
+    table.string('phone').notNullable();
     table.json('purchases');
   })
 };

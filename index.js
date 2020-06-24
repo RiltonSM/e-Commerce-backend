@@ -6,7 +6,7 @@ const routes = require('./src/routes');
 
 const app = express();
 
-app.use(cors({origin: 'http://rilton-store.herokuapp.com'}));
+app.use(cors({origin: 'https://rilton-store.herokuapp.com'}));
 app.use(express.json());
 app.use(routes);
 
